@@ -15,5 +15,18 @@ function totalAmountAdjectives (obj) {
     return Object.keys(obj).length;
 }
 
+
+// second solution 
+
+// function totalAmountAdjectives (obj) {
+//     count = 0;
+//     for (var bob in obj) {
+//         console.log(obj[bob]);
+//             count++;
+//         }
+//     return count;
+// }
+
+
 console.log(totalAmountAdjectives({a: "moron", b: "scumbag", c: "moron", d: "dirtbag"}));
-console.log(totalAmountAdjectives({a: "moron", b: "scumbag"}));
+console.log(totalAmountAdjectives({a: null, b: null}));

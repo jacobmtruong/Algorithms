@@ -32,11 +32,11 @@ class Player {
     }
 
     getHeight() {
-        return `${this.name} is height ${this.height}cm`
+        return `${this.name} is ${this.height}cm`
     }
 
     getWeight() {
-        return `${this.name} is weight ${this.weight}kg`
+        return `${this.name} weighs ${this.weight}kg`
     }
 }
 

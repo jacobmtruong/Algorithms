@@ -11,22 +11,26 @@
 // The list will never be empty (no empty object).
 
 
-function totalAmountAdjectives (obj) {
-    return Object.keys(obj).length;
-}
+// function totalAmountAdjectives (obj) {
+//     return Object.keys(obj).length;
+// }
 
 
 // second solution 
 
-// function totalAmountAdjectives (obj) {
-//     count = 0;
-//     for (var bob in obj) {
-//         console.log(obj[bob]);
-//             count++;
-//         }
-//     return count;
-// }
+function totalAmountAdjectives (obj) {
+    count = 0;
+    for (let i in obj) {
+        if (obj[i] != null) {
+            count++;
+        }
+        else {
+            continue
+        }
+    }
+    return count;
+}
 
 
-console.log(totalAmountAdjectives({a: "moron", b: "scumbag", c: "moron", d: "dirtbag"}));
+console.log(totalAmountAdjectives({a: null, b: "scumbag", c: "moron", d: "dirtbag"}));
 console.log(totalAmountAdjectives({a: null, b: null}));

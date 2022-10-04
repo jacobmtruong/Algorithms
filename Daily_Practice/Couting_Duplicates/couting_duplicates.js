@@ -21,7 +21,7 @@ function duplicateCount(text){
 
 
 
-
+console.log(duplicateCount("AVERHhjye"));
 
 
 console.log(duplicateCount("aDDEGFSassd1124"));

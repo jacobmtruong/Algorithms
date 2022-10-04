@@ -2,6 +2,7 @@
 function duplicateCount(text){
     let lowertext = text.toLowerCase();
     let map = {}
+    let count = 0;
     for (let i = 0; i < lowertext.length; i++) {
         if (map[lowertext[i]] != null) {
             map[lowertext[i]] += 1
@@ -10,7 +11,12 @@ function duplicateCount(text){
             map[lowertext[i]] = 1
         }
     }
-    return map
+    for (let key in map) {
+        if (map[key] > 1) {
+            count++
+        }
+    }
+    return count
 }
 
 

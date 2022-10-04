@@ -30,9 +30,10 @@ arrays are heterogenous (allow mixed data types)
 
 but you'll generally want to use them in ways where you can assume they are all the same data type
 declaring arrays
-
+```
 var empty_arr = [];
 var array_with_stuff = [25,20,0,"bacon"];
+```
 length of array / iterate through array (there are other methods)
 
 for(var i=0; i<array_with_stuff.length; i++)
